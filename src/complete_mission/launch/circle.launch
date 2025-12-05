@@ -1,0 +1,7 @@
+<launch>
+        <!-- run the circle.cpp -->
+	<node pkg="complete_mission" type="circle" name="circle" output="screen">
+		<!-- load blacklist, config -->
+                <rosparam command="load" file="$(find complete_mission)/config/circle.yaml" />
+	</node>
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+        <!-- run the avoid.cpp -->
+	<node pkg="complete_mission" type="avoid" name="avoid" output="screen">
+		<!-- load blacklist, config -->
+                <rosparam command="load" file="$(find complete_mission)/config/circle.yaml" />
+	</node>
+</launch>

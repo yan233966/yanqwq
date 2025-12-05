@@ -1,0 +1,8 @@
+##Parameter for avoid.cpp
+
+safe_distance: 1.1
+warning_distance: 0.6
+max_avoid_angle: 1.1    # 60度
+step_size: 1.0
+max_avoid_distance: 1.0
+r: 2.0

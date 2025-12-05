@@ -1,0 +1,4 @@
+<launch>
+        <!-- run the implement.cpp -->
+        <node pkg="complete_mission" type="implement" name="implement" output="screen" />
+</launch>
