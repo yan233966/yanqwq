@@ -201,7 +201,7 @@ private:
       {
           if(lidar.ranges[i] > lidar.range_min && lidar.ranges[i] < lidar.range_max)
           {
-              // 将激光雷达数据转换为世界坐标系中的障碍物位置
+              // 将激光雷达数据转换为ENU坐标系中的障碍物位置
               float obstacle_angle = lidar.angle_min + i * lidar.angle_increment;
               float obstacle_x = current_position_.x + lidar.ranges[i] * cos(obstacle_angle);
               float obstacle_y = current_position_.y + lidar.ranges[i] * sin(obstacle_angle);
